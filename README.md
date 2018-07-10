@@ -2,7 +2,7 @@
 
 This project contains the predictive analysis of the Credit Card Fraud Detection using Machine Learning.
 
-####Algorithms/models used:
+#### Algorithms/models used:
  1. Local Outlier Factor
  2. Isolation Forest Algorithm
 
@@ -14,7 +14,7 @@ This project contains the predictive analysis of the Credit Card Fraud Detection
 * Time Period: It presents the transactions occurred in two days in September, 2013.
 * Number of transactions: 284,807
 * Frauds: 492
-* % of Fraud = 0.172%
+* Percent of Fraud = 0.172%
 
 Note: As the number of frauds are very less 0.172% of all transactions making the dataset highly unbalanced.
 
@@ -58,7 +58,8 @@ It's a response variable. It takes two values-0 and 1
 #### Code file: cc_fraud_detection.ipynb
 
 #### Limitations:
-1. Data size: The dataset that we used is 284,807 which is 143 MB. Github has the limit to upload the data, which is 100 MB.
+1. Data size: The dataset that we used is 284,807 which is 143 MB. Github has the limit to upload the data, which is 100 MB. So, the last row of dataset is deleted to make smaller size.
+There are 100,000 transactions downsizing it to 43 MB now
 
 2. Confusion Matrix is meaningless: The dataset is highly unbalanced as there are very few Fraud transactions as compare to the Valid transactions. In reality it is the best scenario, but for this project it's not useful as Machine will not get enough cases of Frauds to train itself to predict Frauds. So, Confusion Matrix is not meaningful for unbalance classification.
 
